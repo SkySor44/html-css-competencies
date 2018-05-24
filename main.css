@@ -1,0 +1,146 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 24C, 24D, 24E, 24F, 22C-2, 22C-5 */
+#position-fixed + .box-model {
+    background: gray;
+    border: 2px solid black;
+    padding: 10px; 
+    margin: 10px;
+    height: 100px; 
+    width: 100px;
+    box-sizing: border-box;
+
+}
+
+/* 25D, 25F, 22C-4 */
+.float-display {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    background: gray;
+    border: 2px solid lightblue;
+    float: right;
+    display: flex;
+
+}
+
+.float-display > p {
+    font-size: 20px;
+}
+
+/* 23D-1, 23D-2, 23D-3, 23E, 22C-3 */
+.font-background {
+    background-color: lightcoral;
+
+}
+
+.font-background p {
+    font-weight: 900;
+    color: green;
+    font-size: 25px;
+}
+
+/* 23F */
+.background-image {
+    background-image: url('https://images.unsplash.com/photo-1508182314998-3bd49473002f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af394daae4bdbc4a95dc2204984b790d&auto=format&fit=crop&w=750&q=80');
+    height: 500px;
+    width: 50%;
+}
+
+/* 25C-1 */
+.position-relative {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: blue;
+}
+
+/* 25C-2 */
+.position-absolute {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    background-color: yellow;
+}
+
+/* 25C-3, 22C-1 */
+#position-fixed {
+    z-index: 10;
+    height: 50px;
+    width: 97%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    margin-left: 90%;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+/* 30C, 30D */
+.fancy-effects {
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px 2px black;
+    text-overflow: clip;
+    background: linear-gradient(to right, lightblue, blue, aqua )
+}
+
+/* 30E */
+.fancy-effects p {
+    color: white;
+    word-wrap: break-word;
+}
+
+/* 27C, 27D, 27E, 27F, 27G */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    border: 2px solid darkgoldenrod;
+    margin: 20px;
+}
+
+/* 26E */
+option {
+    background: yellow;
+}
+option:disabled {
+    background: black;
+}
+
+/* 26H */
+.flexbox:hover {
+    border: 2px solid lawngreen;
+}
+
+/* 26G */
+input:focus {
+    background-color: blueviolet;
+}
+ 
+/* 26L */
+p:nth-child(even){
+    color: aquamarine;
+}
+
+/* 29D */
+@media screen {
+    .flexbox{
+        width: 50%;
+    }
+}
+
+/* 29C */
+@media (min-width: 500px){
+    .flexbox{
+        width: 75%;
+    }
+}
